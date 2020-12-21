@@ -1,0 +1,17 @@
+import random
+num = random.randint(1,10)
+score = 0
+while True:
+    score = score + 1
+    print('Devine un nombre compris entre 1 et 10')
+    a = input()
+    i = int(a)
+    if i == num:
+        print('Tu as trouvé')
+        break
+    elif i < num:
+        print('Essaie plus haut')
+    elif i > num:
+        print('Essaie plus bas')
+    
+print('Score: %i' % (score))
